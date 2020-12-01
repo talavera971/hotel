@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="layout.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body id="page3" onload="new ElementMaxHeight();">
+<div id="main">
+<!-- header -->
+	<div id="header" class="small">
+		<div class="row-1">
+	 		<div class="wrapper">
+				<div class="logo">
+					<h1><a href="index.html">Tala's Hotel</a></h1>
+				</div>
+			
+			</div>
+		</div>
+		<div class="row-2 alt">
+	 		<div class="indent">
+<!-- header-box-small begin -->
+				<div class="header-box-small">
+					<div class="inner">
+						<ul class="nav">
+					 		<li><a href="index.html" class="current">Inicio</a></li>
+							<li><a href="servicios.html"">Servicios</a></li>
+							<li><a href="galeria.html">Galeria</a></li>
+							<li><a href="comentarios.html">Comentarios</a></li>
+							<li><a href="contacto.html">Contactenos</a></li>
+						</ul>
+					</div>
+				</div>
+<!-- header-box-small end -->
+			</div>
+		</div>
+<!-- content -->
+	</div><
+	<div id="content">
+  		<div class="gallery">
+			<ul>
+				<li><a href="#"><img alt="" src="images/2page-img1.jpg" /></a></li>
+				<li><a href="#"><img alt="" src="images/2page-img2.jpg" /></a></li>
+				<li><a href="#"><img alt="" src="images/2page-img3.jpg" /></a></li>
+				<li><a href="#"><img alt="" src="images/2page-img4.jpg" /></a></li>
+				<li><a href="#"><img alt="" src="images/2page-img5.jpg" /></a></li>
+				<li><a href="#"><img alt="" src="images/2page-img6.jpg" /></a></li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="aside maxheight">
+<!-- box begin -->
+				<div class="box maxheight">
+					<div class="inner">
+						<h3>Browse Images</h3>
+						<div class="gallery-images">
+							<ul>
+								<li><a href="#"><img alt="" src="images/3page-img1.jpg" /></a></li>
+								<li><a href="#"><img alt="" src="images/3page-img2.jpg" /></a></li>
+								<li><a href="#"><img alt="" src="images/3page-img3.jpg" /></a></li>
+								<li><a href="#"><img alt="" src="images/3page-img4.jpg" /></a></li>
+								<li><a href="#"><img alt="" src="images/3page-img5.jpg" /></a></li>
+								<li><a href="#"><img alt="" src="images/3page-img6.jpg" /></a></li>
+								<li><a href="#"><img alt="" src="images/3page-img7.jpg" /></a></li>
+								<li><a href="#"><img alt="" src="images/3page-img8.jpg" /></a></li>
+								<li><a href="#"><img alt="" src="images/3page-img9.jpg" /></a></li>
+								<li><a href="#"><img alt="" src="images/3page-img10.jpg" /></a></li>
+								<li><a href="#"><img alt="" src="images/3page-img11.jpg" /></a></li>
+								<li><a href="#"><img alt="" src="images/3page-img12.jpg" /></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+<!-- box end -->
+			</div>
+			<div class="content">
+				<div class="indent">
+					<h2>Hotel’s picture gallery</h2>
+					<div class="gallery-main png">
+						<div class="inner">
+				 			
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/habitacion2.jpg" style="width:100%">
+  <img class="mySlides" src="images/habitacion3.jpg" style="width:100%">
+  <img class="mySlides" src="images/habitacion4.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
